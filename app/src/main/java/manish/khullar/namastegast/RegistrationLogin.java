@@ -53,7 +53,7 @@ public class RegistrationLogin extends AppCompatActivity {
                     Snackbar snackbar = Snackbar.make(view, "Please fill out these fields",
                             Snackbar.LENGTH_LONG);
                     View snackbarView = snackbar.getView();
-                    snackbarView.setBackgroundColor(getResources().getColor(R.color.red));
+                    snackbarView.setBackgroundColor(getResources().getColor(R.color.orange));
                     snackbar.show();
                     txtInLayoutUsername.setError("Username should not be empty");
                 } else {
@@ -63,7 +63,7 @@ public class RegistrationLogin extends AppCompatActivity {
                     Snackbar snackbar = Snackbar.make(view, "Please fill out these fields",
                             Snackbar.LENGTH_LONG);
                     View snackbarView = snackbar.getView();
-                    snackbarView.setBackgroundColor(getResources().getColor(R.color.red));
+                    snackbarView.setBackgroundColor(getResources().getColor(R.color.orange));
                     snackbar.show();
                     txtInLayoutPassword.setError("Password should not be empty");
                 } else {
@@ -88,14 +88,14 @@ public class RegistrationLogin extends AppCompatActivity {
         View dialogView = inflater.inflate(R.layout.activity_registration_login, null);
         dialog.setView(dialogView);
 
-        reg_username = dialogView.findViewById(R.id.reg_username);
-        reg_password = dialogView.findViewById(R.id.reg_password);
-        reg_firstName = dialogView.findViewById(R.id.reg_firstName);
-        reg_lastName = dialogView.findViewById(R.id.reg_lastName);
-        reg_email = dialogView.findViewById(R.id.reg_email);
-        reg_confirmemail = dialogView.findViewById(R.id.reg_confirmemail);
-        reg_register = dialogView.findViewById(R.id.reg_register);
-        txtInLayoutRegPassword = dialogView.findViewById(R.id.txtInLayoutRegPassword);
+        reg_username = dialogView.findViewById(R.id.username);
+        reg_password = dialogView.findViewById(R.id.password);
+        reg_firstName = dialogView.findViewById(R.id.Constraint1);
+        reg_lastName = dialogView.findViewById(R.id.Constraint2);
+        reg_email = dialogView.findViewById(R.id.Constraint3);
+        reg_confirmemail = dialogView.findViewById(R.id.Constraint3);
+        reg_register = dialogView.findViewById(R.id.Constraint4);
+        txtInLayoutRegPassword = dialogView.findViewById(R.id.rememberMe);
 
         reg_register.setOnClickListener(new View.OnClickListener() {
             @Override

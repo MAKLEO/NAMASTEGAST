@@ -1,6 +1,8 @@
 <resources>
+    <string name="Password">Secretly Enter your Password</string>
+    <string name="Username">Enter your Username</string>
     <string name="app_name">NAMASTE GAST</string>
-
+    <string name="Logo">Namaste Gast</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
     <string name="action_sign_in">Sign in or register</string>
